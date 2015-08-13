@@ -1,11 +1,15 @@
 def third_greatest(nums)
 
-sorted = nums.sort
-three = sorted[sorted.length-3]
+ if nums.length < 3
+  return nil
+ else
+  sorted = nums.sort
+  three = sorted[sorted.length-3]
+ end
 
 end
 
-puts third_greatest([4, 45, 22, 7, 5])
+puts third_greatest([45, 22])
 
 puts(
   'third_greatest([5, 3, 7]) == 3: ' +
